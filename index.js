@@ -79,9 +79,9 @@ app.get("/flag", (req, res) => {
   totalCorrect = 0;
   let prev_Ans = "";
   nextQuestion();
- // currentQuestion.flag=getFlagEmoji(currentQuestion.flag);
+  // currentQuestion.flag=getFlagEmoji(currentQuestion.flag);
   console.log(currentQuestion);
-  res.render("guess_Flag.ejs", { question: currentQuestion,prev_Ans: prev_Ans });
+  res.render("guess_Flag.ejs", { question: currentQuestion, prev_Ans: prev_Ans });
 });
 
 // POST a new post
@@ -121,6 +121,6 @@ function getFlagEmoji(countryCode) {
   const codePoints = countryCode
     .toUpperCase()
     .split('')
-    .map(char =>  127397 + char.charCodeAt());
+    .map(char => 127397 + char.charCodeAt());
   return String.fromCodePoint(...codePoints);
 }
