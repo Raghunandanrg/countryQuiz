@@ -42,7 +42,7 @@
     var wasCorrect = "<%= locals.wasCorrect %>";
     console.log(wasCorrect)
     if (wasCorrect === "false") {
-      alert('Game over! Final best score: <%= locals.totalScore %> and correct and is <%= locals.prev_Ans%>');
+      alert('Game over! Final best score: <%= locals.totalScore %> and correct answer is <%= locals.prev_Ans%>');
       location.href = '/';
     }
 
