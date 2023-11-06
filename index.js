@@ -89,7 +89,7 @@ app.post("/submit_flag", (req, res) => {
   let answer = req.body.answer.trim();
   let isCorrect = false;
   let prev_Ans = "";
-  if (currentQuestion.flag.toLowerCase() === answer.toLowerCase()) {
+  if (currentQuestion.country.toLowerCase() === answer.toLowerCase()) {
     totalCorrect++;
     console.log(totalCorrect);
     isCorrect = true;

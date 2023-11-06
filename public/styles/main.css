@@ -4,6 +4,13 @@ body {
   background-size: cover;
   font-family: Arial, sans-serif;
 }
+.head{
+background-color: rgb(165, 205, 84);
+margin: 0 30%;
+font-size: 2.8vh;
+border-radius: 4%;
+color: white;
+}
 h1{
   text-align: center;
 }
@@ -121,7 +128,7 @@ button:hover {
 }
 
 .restart-button {
-  display: inline-block;
+  display: flex;
   background-color: #fff;
   color: #333;
   padding: 15px 30px;
